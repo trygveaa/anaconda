@@ -48,7 +48,7 @@ func (a TwitterApi) GetFriendsIds(v url.Values) (c Cursor, err error) {
 }
 
 func (a TwitterApi) GetFriendshipsLookup(v url.Values) (friendships []Friendship, err error) {
-	err = a.apiGet("http://api.twitter.com/1.1/friendships/lookup.json", v, &friendships)
+	err = a.apiGet("https://api.twitter.com/1.1/friendships/lookup.json", v, &friendships)
 	return
 }
 
@@ -58,7 +58,7 @@ func (a TwitterApi) GetFriendshipsIncoming(v url.Values) (c Cursor, err error) {
 }
 
 func (a TwitterApi) GetFriendshipsOutgoing(v url.Values) (c Cursor, err error) {
-	err = a.apiGet("http://api.twitter.com/1.1/friendships/outgoing.json", v, &c)
+	err = a.apiGet("https://api.twitter.com/1.1/friendships/outgoing.json", v, &c)
 	return
 }
 

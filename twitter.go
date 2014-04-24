@@ -49,9 +49,9 @@ import (
 )
 
 var oauthClient = oauth.Client{
-	TemporaryCredentialRequestURI: "http://api.twitter.com/oauth/request_token",
-	ResourceOwnerAuthorizationURI: "http://api.twitter.com/oauth/authenticate",
-	TokenRequestURI:               "http://api.twitter.com/oauth/access_token",
+	TemporaryCredentialRequestURI: "https://api.twitter.com/oauth/request_token",
+	ResourceOwnerAuthorizationURI: "https://api.twitter.com/oauth/authenticate",
+	TokenRequestURI:               "https://api.twitter.com/oauth/access_token",
 }
 
 type TwitterApi struct {
